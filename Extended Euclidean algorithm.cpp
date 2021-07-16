@@ -55,11 +55,10 @@ void extended_Euclidean_algorithm(LL a, LL b, LL &u, LL &v, LL &w, LL &x, LL &y,
 		w -= q*z;
 		
 		
-		if( w < z ){ // we change the equations' order
-			std::swap( u, x );
-			std::swap( v, y );
-			std::swap( w, z );
-		}
+		// we change the equations' order
+		std::swap( u, x );
+		std::swap( v, y );
+		std::swap( w, z );
 	}
 }
 
